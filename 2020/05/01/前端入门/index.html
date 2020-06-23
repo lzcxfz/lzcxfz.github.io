@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="准程序员、精通各大语言的拼写。"><meta name="keywords" content="C语言,编程,计算机,汇编,C#,数据结构,程序员"><link rel="stylesheet" type="text/css" href="//fonts.loli.net/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.4"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.4"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><title>前端入门 | 赖卓成的博客</title><meta name="generator" content="Hexo 4.0.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">前端入门</h1><a id="logo" href="/.">赖卓成的博客</a><p class="description">愿你出走半生，归来仍是少年。</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">前端入门</h1><div class="post-meta"><a href="/2020/05/01/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8/#comments" class="comment-count"></a><p><span class="date">May 01, 2020</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>点击</i></i></span></p></div><div class="post-content"><p>出来混迟早要还的，本该在大一就学完的东西拖到大三也没开始学。英雄联盟只是游戏，不会为你的未来买单。<br>                    HTML部分<br>html基础：<br>1.html基本结构</p>
+<html>
+<head>头部信息 head标签中的所有内容不会再网页上进行展示
+<title>标题</title>
+</head>
+<body bgcolor="red">
+<p>网页主体内容</p>
+<hr/><!--水平线-->
+</body>
+</html>
+
+<p>2.文档声明和META标签<br><!DOCTYPE html>用于声明文档类型</p>
+<meta http-equiv="Content -Type" content="text/html;charest="utf-8"/> 网页编码设置
+
+<p>3.文字和段落<br>标题标签：h1到h6依次减小<br>段落标签：p 标签内的所有文字代表一个段落的文字，段落标签有align属性<br>left左对齐内容，right右对齐内容，center居中对齐内容，justify对行进行伸展，这样每行都有相等的长度<br><br/>标签为单标签 换行作用，但是不会分段 原来是一段的文字 使用br后还是同一段文字<br>在编辑器中手动敲入的空格都是不起做用的，需要使用空格代码&nbps;</p>
+<pre></pre>预格式化标签 在标签内输入的文字是什么样子的，在浏览器展示就是什么样子的
+
+<p>4.修饰标签</p>
+<hr/>水平线
+<i></i>和<em><em/>标签效果一样，使文字倾斜
+<b></b>和<strong></strong>效果一样，使文字加粗
+上标:<sub></sub> 下标:<sup></sup>
+
+<p>5.列表标签<br>无序列表<ul></ul>中间的每项内容使用<li></li><br>在ul标签中有type属性可以用来修改无序列表每项前面的标志,disc:圆点,square:正方形,circle空心圆。写法<ul type="disc"></li></li></ul><br>有序列表<ol><li></li></ol> 同样有type属性，1数字，a小写字母，A大写字母，i小写罗马数字，I大写罗马数字 写法<ol type="I"><li></li></ol><br>定义列表<dl></p>
+<dt>定义列表项</dt>
+<dd>列表描述</dd>
+</dl>
+每个dl中可以有多个dt，每个dt中可以有多个dd，dt和dd是同级标签，三个标签要同时使用
+
+<p>6.图像标签<br>img标签为单标签,两个基本属性width height，alt：当用户无法查看图像时，alt属性可以代替图像，显示在浏览器中。<br><img src="图片地址" alt="代替内容"/></p>
+<p>7.超链接<br><a href="链接地址"></a><br>空链接：<a href="#"></a><br>a标签属性： target链接的目标窗口，默认情况是在当前窗口打开页面，self默认，blank新的窗口。title链接提示文字，name链接命名。</p>
+<p>8.锚链接<br>锚链接可以实现在单页面内不同位置的跳转<br>跳转到的位置：<a href="..." name="锚名"></a><br>寻找锚的链接：<a href="#锚名"></a><br>不同页面锚的使用：<br>寻找锚的链接: 网页1.html：<a href="网页2#锚名"></a><br>跳转到的位置：网页2.html：<a name="锚名"></a></p>
+<p>html表格：</p>
+<p>9.基础表格</p>
+<table><!-表格开始-->
+<tr>行
+<td></td>单元格
+</tr>
+</table><!-表格结束-->
+例：创建一个两行三列的表格,创建之后不会显示，要设置border
+<table border="1">
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<p>10.表格操作</p>
+<th></th>表格头，内容居中，加粗显示
+<caption></caption>给表格添加标题
+当表格很复杂时，表格加载需要长时间，影响用户体验，把表格划分结构，让它加载一部分，显示一部分。表格结构划分为：表头放在thead、主体放在tbody、脚注放在tfoot，即可
+
+<p>11.表格属性4<br>table属性：width规定表格的宽度，align表格相对周围元素的对齐方式，border规定表格外边框的宽度，Bgcolor表格的背景颜色，cellpadding单元边沿与内容之间的空白，cellspacing单元格之间的空白，frame规定外侧边框的哪个部分是可见的，rules规定内侧边框哪个部分是可见的<br>tr属性：align行内容的水平对齐，valign行内容的垂直对齐，bgcolor行的背景颜色<br>td和th的属性：align行内容的水平对齐，valign行内容的垂直对齐，bgcolor行的背景颜色，width单元格宽度，height单元格高度<br>thead,tbody,tfoot和td一样</p>
+<p>12.表格跨行 跨列<br>跨列属性：colspan，值表示需要跨列的数值<br>跨行属性：rowspan，值表示需要跨行的数值</p>
+<p>13.表格嵌套<br>嵌入的表格要有完整的表格结构，嵌入的表格要放在td标签中</p>
+<p>14.表格布局<br>布局原则，由外向里布局。尽量少使用表格嵌套和跨行跨列</p>
+<p>html表单</p>
+<p>15.表单介绍<br>&lt;input type=”类型属性” name=”名称” …/&gt; 单标签   text文字域，password密码域，file文件域，CheckBox复选域，radio单选域，button按钮，submit提交按钮，reset重置按钮，hidden隐藏域，image图片域</p>
+<p>16.input标签<br>text文本域属性：name文字域的名臣，Maxlength用户输入的最大字符长度，size文本框的宽度以字符个数为单位，value文本框的默认值，placeholder用户填写输入字段的提示<br>radio单选框：如果需几个中只能选择一个，则name要一样，默认选中转态在input标签内添加checked<br>CheckBox复选框：一组数据复选框name最好一样，服务器方便确认。<br>按钮：有三种1.button普通按钮 2.submit提交按钮 3.reset重置按钮<br>图像域（图像提交按钮）：<input type="image" name="" src=""> 和submit一样 有提交按钮的功能<br>隐藏域：有些信息不让用户看到，却需要传递给服务器，就使用隐藏域。<input type="hidden" name=""></p>
+<p>17.select标签<br>下拉菜单语法：<select><option value="">选项</option></select><br>select属性：name设置下拉菜单和列表的名称，multiple设置可选择多个选项，size设置列表中可见选项的数目<br>option属性:selected设置选项初始选中状态，value定义发往服务器的选项值<br>textarea多行文本域：<textarea name=" rows=" cols="">内容</textarea> ，placeholder用户填写输入字段的提示,rows可见行数，cols可见宽度</p>
+<p>18.表单属性<br>form标签：action值url提交表单时向何处发送表单数据。method值get，post 设置表单以何种方式发送到指定页面，get会暴露信息，一般用于信息获取，post更有保密性，一般用于修改服务器上的资源。target以何种方式打开action url</p>
+<p>搭建网页结构：</p>
+<p>19.div和span<br>div是一个区块容器标记，<div></div>之间是一个容器，可以包含段落表格图片等等元素<br>每一个div需要占一行。span在一行内展示内容，放不下则自动换行。</p>
+<p>20.标签嵌套<br>块级标签：占据一行，换行</p>
+<div>、<ul>、<ol>、<dl>、<dt>、<dd>、<h1>~<h6>、<p>、<form>、<hr>、等
+行内标签：在一行，不换行
+<b>、<em>、<img>、<input>、<a>、<sup>、<sub>、<textarea>、<span>、等
+嵌套规则：
+1.块级元素可以包含行内元素和某些块级元素。如：<div><a>被包含的a标签</a></div>
+2.行内元素不能包含块元素，只能包含其他行内元素。如a标签中不能包含div
+3.块级元素不能放在<p>标签内
+4.有些特殊的块级元素只能包含行内元素不能包含块级元素：h1~h6、p、dt
+5.块级元素与块级元素并列，行内元素与行内元素并列 错误例子：<div><h1></h1><span></span></div>这样写是错误的，h1是块级元素，span是行内元素，不能并列。
+
+<p>21.网页结构分析<br>一般网页分为页头（logo，导航，banner图）、主体（要展示的内容）、页脚（版权，链接）</p>
+</div><div class="post-copyright"><blockquote><p>原文作者: 赖卓成</p><p>原文链接: <a href="https://lzcxfz.github.io/2020/05/01/前端入门/">https://lzcxfz.github.io/2020/05/01/前端入门/</a></p><p>版权声明: 转载请注明出处(必须保留作者署名及链接)</p></blockquote></div><div class="tags"><a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a></div><div class="post-share"><div class="social-share"><span>分享到:</span></div></div><div class="post-nav"><a href="/2019/11/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/" class="next">操作系统笔记</a></div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">~、、、、等
+行内标签：在一行，不换行
+、、、、、、、、、等
+嵌套规则：
+1.块级元素可以包含行内元素和某些块级元素。如：被包含的a标签
+2.行内元素不能包含块元素，只能包含其他行内元素。如a标签中不能包含div
+3.块级元素不能放在标签内
+4.有些特殊的块级元素只能包含行内元素不能包含块级元素：h1~h6、p、dt
+5.块级元素与块级元素并列，行内元素与行内元素并列 错误例子：这样写是错误的，h1是块级元素，span是行内元素，不能并列。
+
+21.网页结构分析一般网页分为页头（logo，导航，banner图）、主体（要展示的内容）、页脚（版权，链接）
+</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#null"><span class="toc-text">、、、、等
+行内标签：在一行，不换行
+、、、、、、、、、等
+嵌套规则：
+1.块级元素可以包含行内元素和某些块级元素。如：被包含的a标签
+2.行内元素不能包含块元素，只能包含其他行内元素。如a标签中不能包含div
+3.块级元素不能放在标签内
+4.有些特殊的块级元素只能包含行内元素不能包含块级元素：h1~h6、p、dt
+5.块级元素与块级元素并列，行内元素与行内元素并列 错误例子：这样写是错误的，h1是块级元素，span是行内元素，不能并列。
+
+21.网页结构分析一般网页分为页头（logo，导航，banner图）、主体（要展示的内容）、页脚（版权，链接）
+</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text"></span></a></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/05/01/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8/">前端入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0/">操作系统笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%94%99%E9%A2%98-1/">操作系统错题---计算机系统概述</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/13/%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E9%94%99%E9%A2%98-3/">组成原理错题---存储器</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/12/%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0/">计算机组成原理笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/11/%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E9%94%99%E9%A2%98-1/">组成原理错题---计算机系统概述</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/08/%E7%BB%83%E4%B9%A0-%E6%8E%A5%E5%8F%A3/">接口练习--设计一个辅助英雄 接口实现技能治疗 </a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/08/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/">枚举类型</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/08/%E6%8E%A5%E5%8F%A3-%E5%AD%A6%E4%B9%A0%E6%A1%88%E4%BE%8B/">接口学习案例</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/08/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">单例模式:饿汉模式 懒汉模式</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 15px;">算法</a> <a href="/tags/JAVA/" style="font-size: 15px;">JAVA</a> <a href="/tags/C/" style="font-size: 15px;">C++</a> <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 15px;">C语言</a> <a href="/tags/%E6%B1%87%E7%BC%96/" style="font-size: 15px;">汇编</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 15px;">数据结构</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 15px;">笔记</a> <a href="/tags/CSharp/" style="font-size: 15px;">CSharp</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 15px;">前端</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 15px;">操作系统</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 15px;">计算机组成原理</a> <a href="/tags/html/" style="font-size: 15px;">html</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">57</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">63</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> 友情链接</i></div><ul></ul><a href="https://blog.csdn.net/laizhuocheng/" title="我的csdn" target="_blank">我的csdn</a><ul></ul><a href="https://threee-hub.github.io/" title="刘山的博客" target="_blank">刘山的博客</a><ul></ul><a href="https://github.com/lzcxfz/cdn/tree/master/blogImg" title="github图床" target="_blank">github图床</a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">网站地图</a> |  <a href="/atom.xml">订阅本站</a> |  <a href="/about/">联系博主</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次，本站总访客数:<i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>人</p><p><span> Copyright &copy;<a href="/." rel="nofollow">赖卓成.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/search.json.js?v=2.0.4"></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.4" async></script><link rel="stylesheet" type="text/css" href="/share/css/share.css"><script type="text/javascript" src="/share/js/social-share.js" charset="utf-8"></script><script type="text/javascript" src="/share/js/qrcode.js" charset="utf-8"></script></body></html>
